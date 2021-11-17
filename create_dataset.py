@@ -306,7 +306,7 @@ for key in patients.keys():
     # split by patients 
     num_diff_patients = len(np.unique(arr))
     # num_test = max(1, round(split*num_diff_patients))
-    test_patients = np.load('data/rsna_test_patients_{}.npy'.format(key)) # random.sample(list(arr), num_test), download the .npy files from the repo.
+    test_patients = np.load('data/rsna-pneumonia-detection-challenge/rsna_test_patients_{}.npy'.format(key)) # random.sample(list(arr), num_test), download the .npy files from the repo.
     # np.save('rsna_test_patients_{}.npy'.format(key), np.array(test_patients))
     for patient in arr:
         if patient not in patient_imgpath:
